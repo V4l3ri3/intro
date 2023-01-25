@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel = "stylesheet" style href ="stylesheet.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="Om.html"><img src="img/green fox concept.jpg" alt="logo"></a>
+            <ul>
+                <li><a href="Om.html">Om</a></li>
+                <li><a htrf="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="kontaktform">
+        <h1>Kontakt os</h1>
+            <h2>Skriv til os via kontaktformularen</h2>
+
+    <form>
+        <label class="visually-hidden" 
+        for="navn">Navn</label>
+        <input placeholder="Navn" id="navn" type="text" required>
+
+        <label for="adresse">Addresse</label>
+        <input id="adresse" type="text" required>
+
+        <label for="telefon">Telefonnummer</label>
+        <input id="telefon" type="tel" required>
+
+        <label for="mail">E-mail</label>
+        <input id="mail" type="email" required>
+
+        <label for="sodavand">Valg sodavand</label>
+        <select id="sodavand" name="select">
+            <option selected="true" disabled value="0">Valg sodavand</option>
+            <option value="1">Pepsi</option>
+            <option value="2">Pepsi Max</option>
+            <option value="3">Fanta</option>
+            <option value="4">Sprite</option>
+        </select>
+
+        <fieldset class="checkbox">
+            <legend>Valg services du ønsker</legend>
+
+            <div>
+                <input id="rengøring" name="services" type="checkbox" value="rengøring">
+                <label for="rengøring">Rengøring</label>
+            </div>
+
+            <div>
+                <input id="vinduespudser" name="services" type="checkbox" value="vinduespudser">
+                <label for="vinduespudser">Vinduespudser</label>
+            </div>
+        </fieldset>
+
+        <label for="besked">Besked</label>
+        <textarea id="besked" rows="8" cols="20"></textarea>
+
+        <input type="submit" name="submit" value="send">
+    </form>
+    </main>
+</body>
+</html>
